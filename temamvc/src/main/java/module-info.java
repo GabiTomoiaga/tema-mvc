@@ -4,6 +4,7 @@ module com.example.temamvc {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires java.sql;
 
     opens com.example.temamvc to javafx.fxml;
     exports com.example.temamvc;

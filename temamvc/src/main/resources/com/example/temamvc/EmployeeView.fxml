@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.temamvc.view.Employeeview">
+    <top>
+        <VBox spacing="10" padding="10">
+            <Label text="Gestionare Parfumuri - Angajat" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="perfumeTable" prefHeight="300" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colName" text="Nume" prefWidth="150"/>
+                <TableColumn fx:id="colBrand" text="Brand" prefWidth="150"/>
+                <TableColumn fx:id="colPrice" text="Preț" prefWidth="100"/>
+                <TableColumn fx:id="colDescription" text="Descriere" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <VBox spacing="10" padding="10">
+            <HBox spacing="10">
+                <TextField fx:id="nameField" promptText="Nume parfum"/>
+                <TextField fx:id="brandField" promptText="Brand"/>
+                <TextField fx:id="priceField" promptText="Preț"/>
+                <TextField fx:id="descriptionField" promptText="Descriere"/>
+            </HBox>
+            <HBox spacing="10">
+                <Button fx:id="addButton" text="Adaugă"/>
+                <Button fx:id="updateButton" text="Actualizează"/>
+                <Button fx:id="deleteButton" text="Șterge"/>
+            </HBox>
+            <HBox spacing="10">
+                <TextField fx:id="filterBrand" promptText="Filtru Brand"/>
+                <ComboBox fx:id="filterPrice" promptText="Filtru Preț"/>
+                <CheckBox fx:id="filterAvailability" text="Doar disponibile"/>
+                <Button fx:id="filterButton" text="Aplică Filtre"/>
+                <Button fx:id="resetButton" text="Reset"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
