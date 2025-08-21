@@ -8,4 +8,7 @@ module com.example.temamvc {
 
     opens com.example.temamvc to javafx.fxml;
     exports com.example.temamvc;
+
+    opens com.example.temamvc.view to javafx.fxml;
+    exports com.example.temamvc.view;
 }

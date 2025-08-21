@@ -18,7 +18,7 @@ public class Main extends Application {
         StockRepository stockRepository = new StockRepository();
 
         // 2. Încărcăm View-ul din FXML
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/EmployeeView.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EmployeeView.fxml"));
         Scene scene = new Scene(loader.load(), 800, 600);
         Employeeview employeeView = loader.getController();
 
